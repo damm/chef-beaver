@@ -1,0 +1,17 @@
+[beaver]
+redis_url: redis://<%= @redis_url %>
+redis_namespace: <%= @redis_namespace %>
+logstash_version: <%= @logstash_version %>
+
+<% @files.each do |file| -%>
+[<%= file['path'] %>]
+    <% if file.has_key?('format') %>
+format: <%= file['format'] %>
+    <% end %>
+    <% if file.has_key?('type') %>
+type: <%= file['type'] %>
+    <% end %>
+    <% if file.has_key?('tags') %>
+tags: <% file['tags'] %>
+    <% end %>
+<% end %>

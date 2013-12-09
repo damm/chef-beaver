@@ -1,0 +1,9 @@
+#!/bin/sh
+exec 2>&1
+VIRTUAL_ENV="<%= @options[:beaver_home] %>"
+export VIRTUAL_ENV
+_OLD_VIRTUAL_PATH="$PATH"
+PATH="$VIRTUAL_ENV/bin:$PATH"
+export PATH
+cd <%= @options[:beaver_home] %>
+exec chpst -l <%= @options[:beaver_home] %>/beaver.lock -- beaver -c /etc/beaver.conf -t redis
