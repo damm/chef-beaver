@@ -1,0 +1,37 @@
+{
+  "sources": {
+    "beaver": {
+      "path": "."
+    },
+    "python": {
+      "locked_version": "1.2.2"
+    },
+    "git": {
+      "locked_version": "2.0.0"
+    },
+    "build-essential": {
+      "locked_version": "1.2.0"
+    },
+    "runit": {
+      "locked_version": "1.1.0"
+    },
+    "apt": {
+      "locked_version": "1.9.0"
+    },
+    "yum": {
+      "locked_version": "2.0.2"
+    },
+    "minitest-handler": {
+      "locked_version": "0.2.1"
+    },
+    "beaver_test": {
+      "path": "./test/cookbooks/beaver_test"
+    },
+    "dmg": {
+      "locked_version": "1.1.0"
+    },
+    "chef_handler": {
+      "locked_version": "1.1.4"
+    }
+  }
+}
