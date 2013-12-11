@@ -1,3 +1,9 @@
+def whyrun_supported?
+  true
+end
+
+use_inline_resources
+
 action :create do
   if new_resource.redis_uri.empty?
     log "redis_uri is empty, cannot create"
@@ -21,7 +27,6 @@ action :create do
               :beaver_home => "/opt/beaver"
             })
   end
-  new_resource.updated_by_last_action(true)
 end
 action :destroy do
   runit_service "beaver" do

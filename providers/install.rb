@@ -15,7 +15,6 @@ action :git do
     virtualenv new_resource.beaver_root
     action :install
   end
-  new_resource.updated_by_last_action(true)
 end
 action :install do
   python_virtualenv new_resource.beaver_root do
@@ -27,5 +26,4 @@ action :install do
     virtualenv new_resource.beaver_root
     action :install
   end
-  new_resource.updated_by_last_action(true)
 end

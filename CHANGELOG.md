@@ -17,4 +17,6 @@ This file is used to list changes made in each version of chef-beaver.
 ## 0.1.3:
 
 * Stopped hardcoding the python to python2.7; allowing centos to work.
+* Added whyrun support
+* Stop using broken notifications and just move ```use_inline_resources```
 
