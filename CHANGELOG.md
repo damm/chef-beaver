@@ -14,8 +14,7 @@ This file is used to list changes made in each version of chef-beaver.
 
 * Support the [logstash_Version](https://github.com/josegonzalez/beaver/pull/194) Knob.
 
+## 0.1.3:
 
-- - -
-Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.
+* Stopped hardcoding the python to python2.7; allowing centos to work.
 
-The [Github Flavored Markdown page](http://github.github.com/github-flavored-markdown/) describes the differences between markdown on github and standard markdown.

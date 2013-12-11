@@ -1,6 +1,12 @@
+def whyrun_supported?
+  true
+end
+
+use_inline_resources
+
 action :git do
   python_virtualenv new_resource.beaver_root do
-    interpreter "/usr/bin/python2.7"
+    interpreter "/usr/bin/python"
     owner new_resource.user
     group new_resource.group
     action :create
